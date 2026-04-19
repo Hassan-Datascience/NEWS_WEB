@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Neon Observatory | Articles &amp; Insights</title>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;400;600;700;800&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-secondary-container": "#a9bad3",
+                    "on-primary-container": "#00285d",
+                    "surface-variant": "#33343b",
+                    "error-container": "#93000a",
+                    "tertiary": "#4cd7f6",
+                    "on-primary": "#002e6a",
+                    "on-primary-fixed": "#001a42",
+                    "surface-tint": "#adc6ff",
+                    "outline-variant": "#424754",
+                    "surface-container-low": "#191b22",
+                    "surface-container": "#1e1f26",
+                    "primary-fixed": "#d8e2ff",
+                    "surface-container-lowest": "#0c0e14",
+                    "on-secondary": "#213145",
+                    "primary-container": "#4d8eff",
+                    "surface": "#111319",
+                    "on-secondary-fixed-variant": "#38485d",
+                    "tertiary-fixed": "#acedff",
+                    "on-surface-variant": "#c2c6d6",
+                    "on-secondary-fixed": "#0b1c30",
+                    "on-primary-fixed-variant": "#004395",
+                    "on-tertiary": "#003640",
+                    "secondary": "#b7c8e1",
+                    "tertiary-container": "#009eb9",
+                    "surface-dim": "#111319",
+                    "on-surface": "#e2e2eb",
+                    "on-background": "#e2e2eb",
+                    "background": "#111319",
+                    "on-error-container": "#ffdad6",
+                    "primary": "#adc6ff",
+                    "on-error": "#690005",
+                    "on-tertiary-fixed-variant": "#004e5c",
+                    "primary-fixed-dim": "#adc6ff",
+                    "on-tertiary-fixed": "#001f26",
+                    "surface-container-high": "#282a30",
+                    "inverse-surface": "#e2e2eb",
+                    "surface-bright": "#373940",
+                    "inverse-primary": "#005ac2",
+                    "on-tertiary-container": "#002f38",
+                    "secondary-fixed-dim": "#b7c8e1",
+                    "surface-container-highest": "#33343b",
+                    "error": "#ffb4ab",
+                    "secondary-container": "#3a4a5f",
+                    "inverse-on-surface": "#2e3037",
+                    "outline": "#8c909f",
+                    "tertiary-fixed-dim": "#4cd7f6",
+                    "secondary-fixed": "#d3e4fe"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Manrope"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body {
+            background-color: #0c0e14;
+            color: #e2e2eb;
+            font-family: 'Inter', sans-serif;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-effect {
+            backdrop-filter: blur(24px);
+        }
+    </style>
+</head>
+<body class="bg-surface-container-lowest overflow-x-hidden">
+<!-- SideNavBar -->
+<aside class="fixed left-0 top-0 h-full w-64 z-50 bg-[#0c0e14] backdrop-blur-xl bg-opacity-70 flex flex-col py-8 px-4 justify-between shadow-[20px_0_40px_rgba(226,226,235,0.04)]">
+<div>
+<div class="mb-12 px-2">
+<h1 class="text-xl font-black text-[#adc6ff] tracking-tighter">Neon Observatory</h1>
+<p class="font-['Manrope'] uppercase tracking-[0.05em] text-[0.6875rem] font-bold text-[#e2e2eb]/60">Market Intel</p>
+</div>
+<nav class="space-y-2">
+<a class="flex items-center gap-3 py-3 px-4 rounded-lg text-[#e2e2eb]/60 hover:text-[#e2e2eb] hover:bg-[#282a30] transition-all duration-300 scale-95 active:scale-90" href="#">
+<span class="material-symbols-outlined" data-icon="dashboard">dashboard</span>
+<span class="font-['Manrope'] uppercase tracking-[0.05em] text-[0.6875rem] font-bold">Dashboard</span>
+</a>
+<a class="flex items-center gap-3 py-3 px-4 rounded-lg text-[#e2e2eb]/60 hover:text-[#e2e2eb] hover:bg-[#282a30] transition-all duration-300 scale-95 active:scale-90" href="#">
+<span class="material-symbols-outlined" data-icon="trending_up">trending_up</span>
+<span class="font-['Manrope'] uppercase tracking-[0.05em] text-[0.6875rem] font-bold">Trends</span>
+</a>
+<!-- Active Item: Articles -->
+<a class="flex items-center gap-3 py-3 px-4 rounded-lg text-[#adc6ff] border-l-2 border-[#3b82f6] bg-gradient-to-r from-[#3b82f6]/10 to-transparent transition-all duration-300 scale-95 active:scale-90" href="#">
+<span class="material-symbols-outlined" data-icon="description" style="font-variation-settings: 'FILL' 1;">description</span>
+<span class="font-['Manrope'] uppercase tracking-[0.05em] text-[0.6875rem] font-bold">Articles</span>
+</a>
+<a class="flex items-center gap-3 py-3 px-4 rounded-lg text-[#e2e2eb]/60 hover:text-[#e2e2eb] hover:bg-[#282a30] transition-all duration-300 scale-95 active:scale-90" href="#">
+<span class="material-symbols-outlined" data-icon="search">search</span>
+<span class="font-['Manrope'] uppercase tracking-[0.05em] text-[0.6875rem] font-bold">Search</span>
+</a>
+<a class="flex items-center gap-3 py-3 px-4 rounded-lg text-[#e2e2eb]/60 hover:text-[#e2e2eb] hover:bg-[#282a30] transition-all duration-300 scale-95 active:scale-90" href="#">
+<span class="material-symbols-outlined" data-icon="monitoring">monitoring</span>
+<span class="font-['Manrope'] uppercase tracking-[0.05em] text-[0.6875rem] font-bold">Analytics</span>
+</a>
+</nav>
+</div>
+<div class="space-y-2">
+<a class="flex items-center gap-3 py-3 px-4 rounded-lg text-[#e2e2eb]/60 hover:text-[#e2e2eb] hover:bg-[#282a30] transition-all duration-300" href="#">
+<span class="material-symbols-outlined" data-icon="settings">settings</span>
+<span class="font-['Manrope'] uppercase tracking-[0.05em] text-[0.6875rem] font-bold">Settings</span>
+</a>
+<a class="flex items-center gap-3 py-3 px-4 rounded-lg text-[#e2e2eb]/60 hover:text-[#e2e2eb] hover:bg-[#282a30] transition-all duration-300" href="#">
+<span class="material-symbols-outlined" data-icon="contact_support">contact_support</span>
+<span class="font-['Manrope'] uppercase tracking-[0.05em] text-[0.6875rem] font-bold">Support</span>
+</a>
+</div>
+</aside>
+<!-- TopAppBar -->
+<header class="fixed top-0 right-0 w-[calc(100%-16rem)] z-40 bg-[#111319]/80 backdrop-blur-md flex items-center justify-between px-8 h-20">
+<div class="flex items-center gap-4">
+<span class="font-['Manrope'] text-2xl font-black text-[#e2e2eb] tracking-tight">Articles / Insights</span>
+</div>
+<div class="flex items-center gap-6">
+<div class="relative group">
+<input class="bg-surface-container-low border-none rounded-xl px-12 py-2 text-sm w-64 focus:ring-2 focus:ring-[#3b82f6]/50 text-on-surface" placeholder="Search signals..." type="text"/>
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-on-surface-variant text-sm" data-icon="search">search</span>
+</div>
+<button class="bg-gradient-to-br from-primary to-primary-container text-on-primary-container font-headline font-bold text-xs uppercase tracking-widest px-6 py-3 rounded-xl hover:opacity-90 transition-opacity">
+                Trigger Ingestion
+            </button>
+<div class="flex items-center gap-4 text-[#e2e2eb]/70">
+<button class="material-symbols-outlined hover:text-[#adc6ff] transition-colors" data-icon="notifications">notifications</button>
+<button class="material-symbols-outlined hover:text-[#adc6ff] transition-colors" data-icon="account_circle">account_circle</button>
+</div>
+</div>
+</header>
+<!-- Main Content -->
+<main class="ml-64 mt-20 p-8 min-h-screen">
+<!-- Filters Shell -->
+<section class="mb-10 bg-surface-container-low rounded-xl p-6 flex flex-wrap items-end gap-6 shadow-sm">
+<div class="flex-1 min-w-[200px]">
+<label class="block font-headline font-bold text-[0.6875rem] uppercase tracking-wider text-on-surface-variant mb-2">Category Filter</label>
+<select class="w-full bg-surface-container-high border-none rounded-lg text-sm text-on-surface py-3 px-4 focus:ring-1 focus:ring-primary">
+<option>All Sectors</option>
+<option>Generative AI</option>
+<option>Infrastructure</option>
+<option>Fintech</option>
+<option>Robotics</option>
+</select>
+</div>
+<div class="flex-1 min-w-[200px]">
+<label class="block font-headline font-bold text-[0.6875rem] uppercase tracking-wider text-on-surface-variant mb-2">Market Sentiment</label>
+<select class="w-full bg-surface-container-high border-none rounded-lg text-sm text-on-surface py-3 px-4 focus:ring-1 focus:ring-primary">
+<option>Any Sentiment</option>
+<option>Bullish</option>
+<option>Neutral</option>
+<option>Bearish</option>
+</select>
+</div>
+<div class="flex-1 min-w-[200px]">
+<label class="block font-headline font-bold text-[0.6875rem] uppercase tracking-wider text-on-surface-variant mb-2">Date Horizon</label>
+<select class="w-full bg-surface-container-high border-none rounded-lg text-sm text-on-surface py-3 px-4 focus:ring-1 focus:ring-primary">
+<option>Last 24 Hours</option>
+<option>Last 7 Days</option>
+<option>Current Quarter</option>
+<option>YTD</option>
+</select>
+</div>
+<button class="bg-surface-container-highest text-on-surface font-headline font-bold text-xs uppercase tracking-widest px-8 py-3 rounded-lg hover:bg-surface-bright transition-colors">
+                Apply Filters
+            </button>
+</section>
+<!-- Article Feed -->
+<div class="grid grid-cols-1 gap-6">
+<!-- Article Card 1 -->
+<article class="group bg-surface-container-low hover:bg-surface-container-high transition-all duration-300 rounded-xl overflow-hidden flex flex-col md:flex-row shadow-sm">
+<div class="w-full md:w-48 h-48 md:h-auto overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="conceptual digital visualization of neural network patterns in deep blue and neon cyan colors on a dark background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCB6jkV_zGonLb_7JI0wZ6-FaqzJrXVE6aOKE4a2bcndCu-yaytRC0koAVYqJgAgN30Bv-rz4UZSCZJqIOPgbnE2Ltx_njhFb8T4DLrGyqx3xSmIuo-PThXpLyhBEAroTNofKf5_gRKKfRGqCfzQVF8L053OlIbZDxFvnJoM3iI1g8jt1GWUmdqhw4BsQf_d1Q3niSI5OwCFNkmdXsoG6ywNJAbM7OtCo5Bx1P91-MH4lUKHO6zd-fQPTX0ZzVZ70l6fTPfSwQIiu_a"/>
+</div>
+<div class="flex-1 p-6 flex flex-col justify-between">
+<div>
+<div class="flex justify-between items-start mb-3">
+<div class="flex gap-2">
+<span class="bg-secondary-container text-on-secondary-container px-3 py-1 rounded-full text-[0.625rem] font-bold uppercase tracking-wider">Infrastructure</span>
+<span class="bg-tertiary-container text-on-tertiary font-bold px-3 py-1 rounded-full text-[0.625rem] uppercase tracking-wider">Bullish</span>
+</div>
+<div class="text-right">
+<span class="block font-headline text-2xl font-extrabold text-primary leading-none">88</span>
+<span class="block font-label text-[0.6rem] text-on-surface-variant uppercase font-bold tracking-tighter">Trend Score</span>
+</div>
+</div>
+<h2 class="font-headline text-xl font-bold text-on-surface mb-2 group-hover:text-primary transition-colors">The Quantum Leap: Liquid Neural Networks and the Future of Real-time AI Adaptability</h2>
+<p class="text-sm text-on-surface-variant line-clamp-2 font-light">Exploration of how MIT's latest findings in liquid neural networks are disrupting traditional static model architectures for edge computing devices.</p>
+</div>
+<div class="mt-6 flex flex-wrap items-center justify-between gap-4">
+<div class="flex flex-wrap gap-2">
+<span class="text-[0.6875rem] font-medium px-2 py-1 bg-surface-container-highest text-on-surface rounded">#MIT</span>
+<span class="text-[0.6875rem] font-medium px-2 py-1 bg-surface-container-highest text-on-surface rounded">#LiquidAI</span>
+<span class="text-[0.6875rem] font-medium px-2 py-1 bg-surface-container-highest text-on-surface rounded">#RealTime</span>
+</div>
+<div class="flex items-center gap-6 text-[0.6875rem] font-label font-bold uppercase tracking-widest text-on-surface-variant">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[1rem]" data-icon="source">source</span>
+                                TechCrunch
+                            </div>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[1rem]" data-icon="calendar_today">calendar_today</span>
+                                Oct 12, 2023
+                            </div>
+<a class="flex items-center gap-1 text-primary hover:underline" href="#">
+                                Full Article
+                                <span class="material-symbols-outlined text-[1rem]" data-icon="open_in_new">open_in_new</span>
+</a>
+</div>
+</div>
+</div>
+</article>
+<!-- Article Card 2 -->
+<article class="group bg-surface-container-low hover:bg-surface-container-high transition-all duration-300 rounded-xl overflow-hidden flex flex-col md:flex-row shadow-sm">
+<div class="w-full md:w-48 h-48 md:h-auto overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="futuristic server room with glowing blue wires and hardware lights in a dark industrial data center" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC-JE3OTxOA3c5lVhsWOEwmzfGB0ehibgRdcjvNxzngX-WqPh5rD5WEyDCfBAzbiT5Mxu3_DADdVLdzdlNfQ-i37d86PMPaVGIpXr4_XC0vlg5yAv5HMjNHZ0rClyF9S7iTmoFPcYlTlKFAuwg0U6iemoQFCTH_66FzsylSQaFG2PmONr5-lyJcJQUDmHOIAbnpV9AhipuwpaD42_o9lTs5pruY25yVN7YxQnoKFVnvRtLvOrIur6rMRNpvqpwI7sMVRDNeffLgtRvt"/>
+</div>
+<div class="flex-1 p-6 flex flex-col justify-between">
+<div>
+<div class="flex justify-between items-start mb-3">
+<div class="flex gap-2">
+<span class="bg-secondary-container text-on-secondary-container px-3 py-1 rounded-full text-[0.625rem] font-bold uppercase tracking-wider">Generative AI</span>
+<span class="bg-surface-container-highest text-on-surface font-bold px-3 py-1 rounded-full text-[0.625rem] uppercase tracking-wider">Neutral</span>
+</div>
+<div class="text-right">
+<span class="block font-headline text-2xl font-extrabold text-secondary leading-none">42</span>
+<span class="block font-label text-[0.6rem] text-on-surface-variant uppercase font-bold tracking-tighter">Trend Score</span>
+</div>
+</div>
+<h2 class="font-headline text-xl font-bold text-on-surface mb-2 group-hover:text-primary transition-colors">Copyright and the Model: Navigating the Legislative Fog of Training Data</h2>
+<p class="text-sm text-on-surface-variant line-clamp-2 font-light">As global regulators debate the fair use of internet data, major AI players are striking private deals with publishers to secure training longevity.</p>
+</div>
+<div class="mt-6 flex flex-wrap items-center justify-between gap-4">
+<div class="flex flex-wrap gap-2">
+<span class="text-[0.6875rem] font-medium px-2 py-1 bg-surface-container-highest text-on-surface rounded">#Policy</span>
+<span class="text-[0.6875rem] font-medium px-2 py-1 bg-surface-container-highest text-on-surface rounded">#Copyright</span>
+</div>
+<div class="flex items-center gap-6 text-[0.6875rem] font-label font-bold uppercase tracking-widest text-on-surface-variant">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[1rem]" data-icon="source">source</span>
+                                Reuters Business
+                            </div>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[1rem]" data-icon="calendar_today">calendar_today</span>
+                                Oct 11, 2023
+                            </div>
+<a class="flex items-center gap-1 text-primary hover:underline" href="#">
+                                Full Article
+                                <span class="material-symbols-outlined text-[1rem]" data-icon="open_in_new">open_in_new</span>
+</a>
+</div>
+</div>
+</div>
+</article>
+<!-- Article Card 3 -->
+<article class="group bg-surface-container-low hover:bg-surface-container-high transition-all duration-300 rounded-xl overflow-hidden flex flex-col md:flex-row shadow-sm">
+<div class="w-full md:w-48 h-48 md:h-auto overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="dark dashboard with vibrant red and green bar charts showing market volatility and rapid data shifts" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCRH8qmM7PyZG-wlF-9OpdIwDHGfbxqqjU8n1aHL9mkrk-tWgSxuFKdoP22mUK39rE8CrDjxga_UMyLS2H1QFEFrOMwdKGSjfbEhscVDcPCH3pBKfQOBjlv_2nw1QDTbbrhARVw93k_pZlqCGv_lB_DTD8L3aKry1fzoatirhOuitPhAmXk1zo9F23qX_WOSEo_cX343HLsYnWjPrjn-xg2IUpWas3J2M4hz4HRlFc8tcYJek31bV-8ZxHxPbrwUNDaF4_4AkYA2wGs"/>
+</div>
+<div class="flex-1 p-6 flex flex-col justify-between">
+<div>
+<div class="flex justify-between items-start mb-3">
+<div class="flex gap-2">
+<span class="bg-secondary-container text-on-secondary-container px-3 py-1 rounded-full text-[0.625rem] font-bold uppercase tracking-wider">Fintech</span>
+<span class="bg-error-container text-on-error-container font-bold px-3 py-1 rounded-full text-[0.625rem] uppercase tracking-wider">Bearish</span>
+</div>
+<div class="text-right">
+<span class="block font-headline text-2xl font-extrabold text-error leading-none">12</span>
+<span class="block font-label text-[0.6rem] text-on-surface-variant uppercase font-bold tracking-tighter">Trend Score</span>
+</div>
+</div>
+<h2 class="font-headline text-xl font-bold text-on-surface mb-2 group-hover:text-primary transition-colors">The Valuation Squeeze: Early-Stage AI Funding Hits 24-Month Low</h2>
+<p class="text-sm text-on-surface-variant line-clamp-2 font-light">Market data suggests a cooling period as investors shift focus from 'AI-first' labels to sustainable revenue-per-employee metrics.</p>
+</div>
+<div class="mt-6 flex flex-wrap items-center justify-between gap-4">
+<div class="flex flex-wrap gap-2">
+<span class="text-[0.6875rem] font-medium px-2 py-1 bg-surface-container-highest text-on-surface rounded">#VCFunding</span>
+<span class="text-[0.6875rem] font-medium px-2 py-1 bg-surface-container-highest text-on-surface rounded">#Economics</span>
+</div>
+<div class="flex items-center gap-6 text-[0.6875rem] font-label font-bold uppercase tracking-widest text-on-surface-variant">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[1rem]" data-icon="source">source</span>
+                                Bloomberg
+                            </div>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[1rem]" data-icon="calendar_today">calendar_today</span>
+                                Oct 10, 2023
+                            </div>
+<a class="flex items-center gap-1 text-primary hover:underline" href="#">
+                                Full Article
+                                <span class="material-symbols-outlined text-[1rem]" data-icon="open_in_new">open_in_new</span>
+</a>
+</div>
+</div>
+</div>
+</article>
+</div>
+<!-- Pagination -->
+<div class="mt-12 flex justify-center items-center gap-2">
+<button class="w-10 h-10 rounded-lg bg-surface-container-low flex items-center justify-center text-on-surface-variant hover:bg-primary hover:text-on-primary-container transition-colors">
+<span class="material-symbols-outlined" data-icon="chevron_left">chevron_left</span>
+</button>
+<button class="w-10 h-10 rounded-lg bg-primary text-on-primary-container font-headline font-bold flex items-center justify-center">1</button>
+<button class="w-10 h-10 rounded-lg bg-surface-container-low flex items-center justify-center text-on-surface-variant hover:bg-surface-container-high transition-colors font-headline font-bold">2</button>
+<button class="w-10 h-10 rounded-lg bg-surface-container-low flex items-center justify-center text-on-surface-variant hover:bg-surface-container-high transition-colors font-headline font-bold">3</button>
+<span class="px-2 text-on-surface-variant">...</span>
+<button class="w-10 h-10 rounded-lg bg-surface-container-low flex items-center justify-center text-on-surface-variant hover:bg-surface-container-high transition-colors font-headline font-bold">12</button>
+<button class="w-10 h-10 rounded-lg bg-surface-container-low flex items-center justify-center text-on-surface-variant hover:bg-primary hover:text-on-primary-container transition-colors">
+<span class="material-symbols-outlined" data-icon="chevron_right">chevron_right</span>
+</button>
+</div>
+</main>
+<!-- Floating Action Button (Suppressed on this page as per rules: Task-Focused) -->
+</body></html>
