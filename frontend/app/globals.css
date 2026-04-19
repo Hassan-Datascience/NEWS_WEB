@@ -1,0 +1,89 @@
+@import "tailwindcss";
+
+@theme {
+  --color-on-secondary-container: #a9bad3;
+  --color-on-primary-container: #00285d;
+  --color-surface-variant: #33343b;
+  --color-error-container: #93000a;
+  --color-tertiary: #4cd7f6;
+  --color-on-primary: #002e6a;
+  --color-on-primary-fixed: #001a42;
+  --color-surface-tint: #adc6ff;
+  --color-outline-variant: #424754;
+  --color-surface-container-low: #191b22;
+  --color-surface-container: #1e1f26;
+  --color-primary-fixed: #d8e2ff;
+  --color-surface-container-lowest: #0c0e14;
+  --color-on-secondary: #213145;
+  --color-primary-container: #4d8eff;
+  --color-surface: #111319;
+  --color-on-secondary-fixed-variant: #38485d;
+  --color-tertiary-fixed: #acedff;
+  --color-on-surface-variant: #c2c6d6;
+  --color-on-secondary-fixed: #0b1c30;
+  --color-on-primary-fixed-variant: #004395;
+  --color-on-tertiary: #003640;
+  --color-secondary: #b7c8e1;
+  --color-tertiary-container: #009eb9;
+  --color-surface-dim: #111319;
+  --color-on-surface: #e2e2eb;
+  --color-on-background: #e2e2eb;
+  --color-background: #111319;
+  --color-on-error-container: #ffdad6;
+  --color-primary: #adc6ff;
+  --color-on-error: #690005;
+  --color-on-tertiary-fixed-variant: #004e5c;
+  --color-primary-fixed-dim: #adc6ff;
+  --color-on-tertiary-fixed: #001f26;
+  --color-surface-container-high: #282a30;
+  --color-inverse-surface: #e2e2eb;
+  --color-surface-bright: #373940;
+  --color-inverse-primary: #005ac2;
+  --color-on-tertiary-container: #002f38;
+  --color-secondary-fixed-dim: #b7c8e1;
+  --color-surface-container-highest: #33343b;
+  --color-error: #ffb4ab;
+  --color-secondary-container: #3a4a5f;
+  --color-inverse-on-surface: #2e3037;
+  --color-outline: #8c909f;
+  --color-tertiary-fixed-dim: #4cd7f6;
+  --color-secondary-fixed: #d3e4fe;
+
+  --radius: 0.125rem;
+  --radius-lg: 0.25rem;
+  --radius-xl: 0.75rem;
+
+  --font-headline: "Manrope", sans-serif;
+  --font-body: "Inter", sans-serif;
+  --font-label: "Inter", sans-serif;
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-on-surface);
+  font-family: var(--font-body);
+}
+
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+.glass-panel, .glass-effect, .glass-sidebar {
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+}
+
+.neon-glow {
+  filter: drop-shadow(0 0 8px var(--color-primary));
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-surface-container-lowest);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-surface-container-high);
+  border-radius: 10px;
+}
