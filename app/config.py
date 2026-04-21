@@ -7,8 +7,10 @@ from pydantic import Field
 
 
 class Settings(BaseSettings):
-    # NewsAPI
+    # API Keys
     news_api_key: str = Field(..., env="NEWS_API_KEY")
+    gnews_api_key: str = Field(..., env="GNEWS_API_KEY")
+    currents_api_key: str = Field(..., env="CURRENTS_API_KEY")
 
     # MongoDB
     mongodb_url: str = Field(..., env="MONGODB_URL")

@@ -20,7 +20,7 @@ class ProcessedArticle(BaseModel):
     sentiment: SentimentLabel
     sentiment_score: float = Field(ge=-1.0, le=1.0)  # TextBlob polarity
     keywords: list[str]
-    score: float = Field(ge=0.0, le=1.0)   # Overall quality score
+    score: float = Field(ge=0.0)          # Overall quality or relevance score
     trend_score: int = Field(ge=0)          # Keyword frequency weight
     processed_at: datetime = Field(default_factory=datetime.utcnow)
     url: Optional[str] = None
